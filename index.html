@@ -3,22 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ramadhan</title>
     <style>
         html, body{
             width: 100vw;
             height: 100vh;
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
+            background-color: rgb(32, 32, 32);
         }
         p{
-            color: red;
+            color: rgb(255, 255, 255); 
             font-size: 100px;
+        }
+        button{
+            width: 400px;
+            height: 50px;
+            border-radius: 40px;
         }
     </style>
 </head>
 <body>
-    <p>>LU SEMUA KONTOL</p>
+    <p>LU SEMUA KONTOL</p>
+    <button onclick="klik();" class="button1">KLIK</button>
+    <p class="teks1"></p>
 </body>
+<script>
+    function klik(){
+        document.querySelector(".teks1").innerHTML = "muka lu kaya peler";
+    }
+</script>
 </html>
